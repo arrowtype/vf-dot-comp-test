@@ -42,12 +42,6 @@
         <dimension name="Optical Size" xvalue="96"/>
       </location>
     </source>
-    <source filename="sparse--Dot_Comp_Test-Display_500.ufo" familyname="Dot Comp Test" stylename="Display Medium">
-      <location>
-        <dimension name="Weight" xvalue="500"/>
-        <dimension name="Optical Size" xvalue="96"/>
-      </location>
-    </source>
     <source filename="Dot_Comp_Test-Display_Bold.ufo" familyname="Dot Comp Test" stylename="Display Bold">
       <lib copy="1"/>
       <groups copy="1"/>
@@ -55,12 +49,6 @@
       <info copy="1"/>
       <location>
         <dimension name="Weight" xvalue="700"/>
-        <dimension name="Optical Size" xvalue="96"/>
-      </location>
-    </source>
-    <source filename="sparse--Dot_Comp_Test-Display_800.ufo" familyname="Dot Comp Test" stylename="Display ExtraBold">
-      <location>
-        <dimension name="Weight" xvalue="800"/>
         <dimension name="Optical Size" xvalue="96"/>
       </location>
     </source>
@@ -85,12 +73,6 @@
     <source filename="sparse--Dot_Comp_Test-Text_200.ufo" familyname="Dot Comp Test" stylename="Text ExtraLight">
       <location>
         <dimension name="Weight" xvalue="200"/>
-        <dimension name="Optical Size" xvalue="12"/>
-      </location>
-    </source>
-    <source filename="sparse--Dot_Comp_Test-Text_500.ufo" familyname="Dot Comp Test" stylename="Text Medium">
-      <location>
-        <dimension name="Weight" xvalue="500"/>
         <dimension name="Optical Size" xvalue="12"/>
       </location>
     </source>
