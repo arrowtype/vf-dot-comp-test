@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>color</key>
+		<string>1,0.75,0,0.7</string>
+		<key>lib</key>
+		<dict>
+			<key>org.unifiedfontobject.normalizer.imageReferences</key>
+			<dict>
+			</dict>
+			<key>org.unifiedfontobject.normalizer.modTimes</key>
+			<string>version: 0.4.3.dev0
+1617727504.4 G_.glif
+1607815450.3 _notdef.glif
+1607815450.3 a.glif
+1617727504.4 a.italic.glif
+1607815450.3 ae.glif
+1617727504.4 at.glif
+1617727504.4 b.glif
+1617727504.4 cedillacomb.glif
+1603666317.2 comma.glif
+1617727504.4 copyright.glif
+1617727504.4 d.glif
+1617727504.4 dieresiscomb.glif
+1617727504.4 dotbelowcmb.glif
+1604543008.7 dotcomb.glif
+1607815450.3 e.glif
+1612979803.8 exclam.glif
+1612979803.8 exclamdown.glif
+1617727504.4 g.glif
+1617727504.4 h.glif
+1617727504.4 m.glif
+1607815450.3 n.glif
+1617727504.4 nine.glif
+1617727504.4 o.glif
+1607815450.3 oe.glif
+1617727504.4 oslash.glif
+1617727504.4 p.glif
+1603666317.2 period.glif
+1617727504.4 q.glif
+1617727504.4 question.glif
+1612979803.8 questiondown.glif
+1617727504.4 quotedblbase.glif
+1612979803.8 quotedblleft.glif
+1612979803.8 quotedblright.glif
+1607815450.3 quoteleft.glif
+1612979803.8 quoteright.glif
+1617727504.4 quotesinglbase.glif
+1617727504.4 r.glif
+1617727504.4 ringcomb.glif
+1617727504.4 six.glif
+1607815450.3 u.glif</string>
+		</dict>
+	</dict>
+</plist>

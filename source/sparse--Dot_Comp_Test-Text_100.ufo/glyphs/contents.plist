@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>dieresiscomb</key>
+		<string>dieresiscomb.glif</string>
+		<key>dotcomb</key>
+		<string>dotcomb.glif</string>
+		<key>i</key>
+		<string>i.glif</string>
+		<key>j</key>
+		<string>j.glif</string>
+		<key>period</key>
+		<string>period.glif</string>
+	</dict>
+</plist>

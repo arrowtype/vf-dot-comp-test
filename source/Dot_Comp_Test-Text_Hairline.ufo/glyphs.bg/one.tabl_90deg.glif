@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="one.tabl_90deg" format="2">
+	<advance width="1360"/>
+	<outline>
+		<contour>
+			<point x="164" y="0" type="line"/>
+			<point x="1191" y="0" type="line"/>
+			<point x="1196" y="24" type="line"/>
+			<point x="730" y="24" type="line"/>
+			<point x="730" y="1454" type="line"/>
+			<point x="714" y="1454" type="line"/>
+			<point x="601" y="1274"/>
+			<point x="473" y="1166"/>
+			<point x="261" y="1100" type="curve"/>
+			<point x="261" y="1071" type="line"/>
+			<point x="470" y="1136"/>
+			<point x="594" y="1243"/>
+			<point x="703" y="1394" type="curve"/>
+			<point x="705" y="1394" type="line"/>
+			<point x="705" y="24" type="line"/>
+			<point x="164" y="24" type="line"/>
+		</contour>
+	</outline>
+</glyph>

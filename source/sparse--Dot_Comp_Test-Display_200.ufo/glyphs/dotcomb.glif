@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dotcomb" format="2">
+	<advance width="26"/>
+	<outline>
+		<contour>
+			<point x="-46" y="1336" type="line"/>
+			<point x="-46" y="1454" type="line"/>
+			<point x="72" y="1454" type="line"/>
+			<point x="72" y="1336" type="line"/>
+		</contour>
+	</outline>
+	<anchor name="_top" x="13" y="985"/>
+</glyph>

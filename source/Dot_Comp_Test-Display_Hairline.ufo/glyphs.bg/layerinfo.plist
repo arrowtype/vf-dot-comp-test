@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>color</key>
+		<string>0,1,1,0.7</string>
+		<key>lib</key>
+		<dict>
+			<key>org.unifiedfontobject.normalizer.imageReferences</key>
+			<dict>
+			</dict>
+			<key>org.unifiedfontobject.normalizer.modTimes</key>
+			<string>version: 0.4.3.dev0
+1607815449.3 N_D_.ord.glif
+1617727501.5 R_.R_E_C_T_grot.glif
+1607815449.3 S_T_.ord.glif
+1617727501.5 a.italic.glif
+1617727501.5 ae.glif
+1617727501.5 ampersand.glif
+1617727501.5 arrowN_W_.glif
+1617727501.5 arrowleftright.glif
+1617727501.5 arrowupdown.glif
+1617727501.5 g.text.glif
+1617727501.5 germandbls.alt.glif
+1594495023.7 hookcomb.glif
+1617727501.5 jdotless.ultra.glif
+1617727501.5 mu.glif
+1617727501.5 oe.glif
+1617727501.5 ohorn.glif
+1617727501.5 oslash.glif
+1617727501.5 oslash.open.glif
+1586112504.1 percent.glif
+1617727501.5 pi.glif
+1607815449.3 six.glif
+1617727501.5 thorn.glif
+1617727501.5 uhorn.glif
+1617727501.5 y.ultra.glif</string>
+		</dict>
+	</dict>
+</plist>
