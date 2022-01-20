@@ -1,0 +1,2 @@
+fontParts==0.10.2
+fontmake==3.1.2
