@@ -1,28 +1,24 @@
 """
-    Removes glyphs from current font if they are not in the "glyphsToKeep" list.
+    IMPORTANT: make sure you don't have other fonts open in RoboFont! Only UFOs you wish to nuke 99% of the glyphs from.
+
+    Removes glyphs from all open font UFOs if they are not in the "glyphsToKeep" list.
     
     Also removes glyphs from groups, kerning, and components.
     
     Includes template glyphs in selection and removal.
 
-    USAGE:
-    python3 source/00--scripts/subset-font-sources.py <directory_of_UFOs>
+    USAGE: Open all fonts in RoboFont, then run this script there.
+
 """
 
-import sys
-import os
-from fontParts.world import *
-
-sourceFolderPath = sys.argv[1]
-
 # list of glyphs to keep (glyph names)
-glyphsToKeep = "dotcomb i j  dieresiscomb idieresis period exclam space".split(" ")
+glyphsToKeep = "dotcomb i j idotless jdotless dieresiscomb idieresis period comma semicolon exclam space".split(" ")
 
-def removeUnwantedGlyphs(font, glyphsToKeep):
+def removeUnwantedGlyphs(f, glyphsToKeep):
 
     # copy space-separated glyph names here
     # glyphsToRemove = list(f.templateSelectedGlyphNames)
-    glyphsToRemove = [glyphName for glyphName in f.templateSelectedGlyphNames if glyphName not in glyphsToKeep]
+    glyphsToRemove = [glyphName for glyphName in f.keys() if glyphName not in glyphsToKeep]
 
     # FONT KEYs -----------------------------------------------
 
@@ -93,11 +89,10 @@ def removeUnwantedGlyphs(font, glyphsToKeep):
     # clearing this list so it's not saved...
     glyphsToRemove = []
 
-# go through the folder and subset the source UFOs
-for fileName in os.listdir(sourceFolderPath):
-    if fileName.endswith(".ufo"):
-        ufoPath = os.path.join(sourceFolderPath, fileName)
-        
-        f = OpenFont(ufoPath, showInterface=False)
+# go through all currently-open fonts in RoboFont, then subset
+# IMPORTANT: make sure you don’t have other fonts open in RoboFont!
+for f in AllFonts():
 
-        removeUnwantedGlyphs(f, glyphsToKeep)
+    print(f.info.familyName, f.info.styleName)
+
+    removeUnwantedGlyphs(f, glyphsToKeep)
