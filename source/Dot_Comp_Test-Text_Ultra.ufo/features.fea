@@ -1,1 +1,1 @@
-include(../features/features.fea);
+include(./features/features.fea);

@@ -1,0 +1,9 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+@composed =   [i            idieresis            j            semicolon            exclam           ];
+@decomposed = [i.decomposed idieresis.decomposed j.decomposed semicolon.decomposed exclam.decomposed];
+
+feature ss01 {
+    sub @composed  by @decomposed;
+} ss01;

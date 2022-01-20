@@ -6,10 +6,10 @@
 		<string>dieresiscomb.glif</string>
 		<key>dotcomb</key>
 		<string>dotcomb.glif</string>
-		<key>i</key>
-		<string>i.glif</string>
-		<key>j</key>
-		<string>j.glif</string>
+		<key>i.decomposed</key>
+		<string>i.decomposed.glif</string>
+		<key>j.decomposed</key>
+		<string>j.decomposed.glif</string>
 		<key>period</key>
 		<string>period.glif</string>
 	</dict>

@@ -1,17 +1,1 @@
-# include(../features/features.fea);
-
-languagesystem DFLT dflt;
-languagesystem latn dflt;
-
-
-feature ss01 {
-    sub uni0444 by uni0444.simple;
-    sub uni0431 by uni0431.simple;
-} ss01;
-
-@dfltR = [R          Racute          Rcaron          Rcedilla          uni0416      uni041A      uni040C      ];
-@grotR = [R.grot     Racute.grot     Rcaron.grot     Rcedilla.grot     uni0416.grot uni041A.grot uni040C.grot ];
-
-feature ss02 {
-    sub @dfltR  by @grotR;
-} ss02;
+include(./features/features.fea);

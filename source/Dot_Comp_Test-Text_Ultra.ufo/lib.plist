@@ -1044,6 +1044,11 @@
 			<string>semicolon</string>
 			<string>exclam</string>
 			<string>dotcomb</string>
+			<string>i.decomposed</string>
+			<string>j.decomposed</string>
+			<string>idieresis.decomposed</string>
+			<string>semicolon.decomposed</string>
+			<string>exclam.decomposed</string>
 		</array>
 		<key>public.postscriptNames</key>
 		<dict>

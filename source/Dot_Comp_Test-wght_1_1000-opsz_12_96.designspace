@@ -21,37 +21,37 @@
     </axis>
   </axes>
   <sources>
-    <source filename="Name_Sans-Display_Hairline.ufo" familyname="Dot Comp Test" stylename="Display Hairline">
+    <source filename="Dot_Comp_Test-Display_Hairline.ufo" familyname="Dot Comp Test" stylename="Display Hairline">
       <location>
         <dimension name="Weight" xvalue="1"/>
         <dimension name="Optical Size" xvalue="96"/>
       </location>
     </source>
-    <source filename="Name_Sans-Display_Bold.ufo" familyname="Dot Comp Test" stylename="Display Bold">
+    <source filename="Dot_Comp_Test-Display_Bold.ufo" familyname="Dot Comp Test" stylename="Display Bold">
       <location>
         <dimension name="Weight" xvalue="700"/>
         <dimension name="Optical Size" xvalue="96"/>
       </location>
     </source>
-    <source filename="Name_Sans-Display_Ultra.ufo" familyname="Dot Comp Test" stylename="Display Ultra">
+    <source filename="Dot_Comp_Test-Display_Ultra.ufo" familyname="Dot Comp Test" stylename="Display Ultra">
       <location>
         <dimension name="Weight" xvalue="1000"/>
         <dimension name="Optical Size" xvalue="96"/>
       </location>
     </source>
-    <source filename="Name_Sans-Text_Hairline.ufo" familyname="Dot Comp Test" stylename="Text Hairline">
+    <source filename="Dot_Comp_Test-Text_Hairline.ufo" familyname="Dot Comp Test" stylename="Text Hairline">
       <location>
         <dimension name="Weight" xvalue="1"/>
         <dimension name="Optical Size" xvalue="12"/>
       </location>
     </source>
-    <source filename="Name_Sans-Text_Bold.ufo" familyname="Dot Comp Test" stylename="Text Bold">
+    <source filename="Dot_Comp_Test-Text_Bold.ufo" familyname="Dot Comp Test" stylename="Text Bold">
       <location>
         <dimension name="Weight" xvalue="700"/>
         <dimension name="Optical Size" xvalue="12"/>
       </location>
     </source>
-    <source filename="Name_Sans-Text_Ultra.ufo" familyname="Dot Comp Test" stylename="Text Ultra">
+    <source filename="Dot_Comp_Test-Text_Ultra.ufo" familyname="Dot Comp Test" stylename="Text Ultra">
       <location>
         <dimension name="Weight" xvalue="1000"/>
         <dimension name="Optical Size" xvalue="12"/>

@@ -12,8 +12,8 @@
 					<string>comma</string>
 					<string>exclam</string>
 					<string>dotcomb</string>
-					<string>i</string>
-					<string>j</string>
+					<string>i.decomposed</string>
+					<string>j.decomposed</string>
 				</array>
 				<key>type</key>
 				<string>glyphList</string>
@@ -97,14 +97,9 @@
 			<string>comma</string>
 			<string>exclam</string>
 			<string>dotcomb</string>
-			<string>i</string>
-			<string>j</string>
-		</array>
-		<key>public.postscriptNames</key>
-		<dict>
-		</dict>
-		<key>public.skipExportGlyphs</key>
-		<array>
+			<string>i.decomposed</string>
+			<string>j.decomposed</string>
+			<string>exclam.decomposed</string>
 		</array>
 	</dict>
 </plist>

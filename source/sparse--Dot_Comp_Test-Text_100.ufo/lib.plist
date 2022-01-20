@@ -9,9 +9,9 @@
 				<array>
 					<string>dieresiscomb</string>
 					<string>dotcomb</string>
-					<string>i</string>
-					<string>j</string>
 					<string>period</string>
+					<string>i.decomposed</string>
+					<string>j.decomposed</string>
 				</array>
 				<key>type</key>
 				<string>glyphList</string>
@@ -92,12 +92,9 @@
 		<array>
 			<string>dieresiscomb</string>
 			<string>dotcomb</string>
-			<string>i</string>
-			<string>j</string>
 			<string>period</string>
-		</array>
-		<key>public.skipExportGlyphs</key>
-		<array>
+			<string>i.decomposed</string>
+			<string>j.decomposed</string>
 		</array>
 	</dict>
 </plist>
