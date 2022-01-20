@@ -1,4 +1,4 @@
-# Variable Font Dot Components Test
+# Variable Font Dot Components Test – WORK IN PROGRESS
 
 Testing for https://github.com/arrowtype/name-sans-roadmap/issues/44.
 
