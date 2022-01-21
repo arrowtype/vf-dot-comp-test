@@ -11,3 +11,6 @@ fontmake -m source/Dot_Comp_Test-wght_1_1000-opsz_12_96--w_sparse_supports.desig
 
 # build static with NO supports
 fontmake -m source/Dot_Comp_Test-wght_1_1000-opsz_12_96.designspace -o ttf -i --output-dir fonts/no-supports/static --expand-features-to-instances
+
+# copy fonts to /docs for GitHub Pages
+cp -r fonts docs/fonts
