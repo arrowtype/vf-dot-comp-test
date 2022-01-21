@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VF Dot Comp Test</title>
+</head>
+<style>
+    @font-face {
+        font-family: "NameSans-VF";
+        src: url("../fonts/full-designspace/Dot_Comp_Test-VF.ttf");
+    }
+    @font-face {
+        font-family: "NameSans";
+        font-weight: 100;
+        src: url("../fonts/full-designspace/static/Dot_Comp_Test_Display-Thin.ttf");
+    }
+    @font-face {
+        font-family: "NameSansNS-VF";
+        src: url("../fonts/no-supports/Dot_Comp_Test-no_supports-VF.ttf");
+    }
+    @font-face {
+        font-family: "NameSansNS";
+        font-weight: 100;
+        src: url("../fonts/full-designspace/static/Dot_Comp_Test_Display-Thin.ttf");
+    }
+    body {
+        font-family: "NameSans-VF",sans-serif;
+        width: 800px;
+        margin: 0 auto;
+    }
+    .variable {
+        font-family: "NameSans-VF",fantasy;
+    }
+    .static {
+        font-family: "NameSans",fantasy;
+    }
+    .decomposed {
+        font-feature-settings: "ss01";
+    }
+    .thin {
+        font-weight: 100;
+    }
+    h3 {
+        border-top: 1px #ccc solid;
+        padding-top: 1rem;
+    }
+    .test-text {
+        font-size: 5rem;
+    }
+    .comparison {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 1rem;
+        margin-bottom: 3rem;
+    }
+
+</style>
+<body>
+    <h1>A test for dot components in variable fonts, for macOS</h1>
+    <p>Relavant to <a href="https://github.com/arrowtype/name-sans-roadmap/issues/44">Name Sans issue #44</a></p>
+    <div class="test">
+        <h2>Basic Test</h2>
+        <h3>With Components</h3>
+        <div class="comparison">
+            <div>
+                <h4>Variable</h4>
+                <span class="test-text variable thin">i j ! ; ï</span>
+            </div>
+            <div>
+                <h4>Static</h4>
+                <span class="test-text static thin">i j ! ; ï</span>
+            </div>
+        </div>
+        <h3>Decomposed</h3>
+        <div class="comparison">
+            <div>
+                <h4>Variable</h4>
+                <span class="test-text variable thin decomposed">i j ! ; ï</span>
+            </div>
+            <div>
+                <h4>Static</h4>
+                <span class="test-text static thin decomposed">i j ! ; ï</span>
+            </div>
+        </div>
+    </div>
+    <h2>Test: No Support Sources</h2>
+    <h2>Test: No AVAR</h2>
+</body>
+</html>

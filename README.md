@@ -16,8 +16,8 @@ The following is a rough outline of how I intend to test this.
 
 |          | With Components | Decomposed |
 |----------|-----------------|------------|
-| Variable | `i j ö !`       | `i j ö !`  |
-| Static   | `i j ö !`       | `i j ö !`  |
+| Variable | `i j ï !`       | `i j ï !`  |
+| Static   | `i j ï !`       | `i j ï !`  |
 
 ### Support/Sparse Sources Test
 
@@ -26,8 +26,8 @@ Goal: Test whether sparse sources are the culprit, by building fonts *without* s
 
 |          | With Components | Decomposed |
 |----------|-----------------|------------|
-| Variable | `i j ö !`       | `i j ö !`  |
-| Static   | `i j ö !`       | `i j ö !`  |
+| Variable | `i j ï !`       | `i j ï !`  |
+| Static   | `i j ï !`       | `i j ï !`  |
 ### AVAR Test
 
 Goal: Test whether the removal of the AVAR table affects the rendering of dot components.
@@ -36,8 +36,8 @@ Goal: Test whether the removal of the AVAR table affects the rendering of dot co
 
 |          | With Components | Decomposed |
 |----------|-----------------|------------|
-| Variable | `i j ö !`       | `i j ö !`  |
-| Static   | `i j ö !`       | `i j ö !`  |
+| Variable | `i j ï !`       | `i j ï !`  |
+| Static   | `i j ï !`       | `i j ï !`  |
 
 ### Path Direction Test
 
@@ -45,9 +45,9 @@ Goal: Test whether path direction matters for components.
 
 |                | With Components | Decomposed |
 |----------------|-----------------|------------|
-| Variable (CW   | `i j ö !`       | `i j ö !`  |
-| Variable (CCW) | `i j ö !`       | `i j ö !`  |
-| Static         | `i j ö !`       | `i j ö !`  |
+| Variable (CW   | `i j ï !`       | `i j ï !`  |
+| Variable (CCW) | `i j ï !`       | `i j ï !`  |
+| Static         | `i j ï !`       | `i j ï !`  |
 
 
 ## Building the Fonts, etc
