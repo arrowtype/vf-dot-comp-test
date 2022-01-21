@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VF Dot Comp Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,MONO@-15..0,550,1,1&display=swap" rel="stylesheet">
 </head>
 <style>
     @font-face {
@@ -26,9 +27,14 @@
         src: url("../fonts/full-designspace/static/Dot_Comp_Test_Display-Thin.ttf");
     }
     body {
-        font-family: "NameSans-VF",sans-serif;
+        /* font-family: "NameSans-VF",sans-serif; */
+        font-family: 'Recursive', monospace;
         width: 800px;
         margin: 0 auto;
+    }
+    i {
+        font-style: normal;
+        font-variation-settings: 'slnt' -15;
     }
     .variable {
         font-family: "NameSans-VF",fantasy;
@@ -65,7 +71,9 @@
 </style>
 <body>
     <h1>Tests for macOS rendering of dot components in variable fonts</h1>
-    <p>Relavant to <a href="https://github.com/arrowtype/name-sans-roadmap/issues/44">Name Sans issue #44</a></p>
+    <p>Relevant to <a href="https://github.com/arrowtype/name-sans-roadmap/issues/44">Name Sans issue #44</a></p>
+    <p><i>How to interpret results:</i></p>
+    <p>If the “Variable” samples look the same as the “Static” samples, the variable font is working as desired.</p>
     <div class="test">
         <h2>Basic Test</h2>
         <h3>With Components</h3>
