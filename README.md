@@ -1,54 +1,10 @@
-# Variable Font Dot Components Test – WORK IN PROGRESS
+# Variable Font Dot Components Test
 
-Testing for https://github.com/arrowtype/name-sans-roadmap/issues/44.
+Web test showing problem and solution: https://arrowtype.github.io/vf-dot-comp-test/
 
-Static fonts don’t have this issue, so they will be used as "controls" in testing.
+**TL;DR: path directions must match between dots and bases, e.g. between the `dotcomb` and `idotless`, or rendering issues can occur in variable fonts.**
 
-## Plan for webpage to test this
-
-The following is a rough outline of how I intend to test this.
-
-### Basic Component Testing Plan
-
-**Goal:** Reproduce the basic problem in a font with a limited character set. (Include sparse sources in this test.)
-
-#### Test (fonts with limited character sets, but full Name Sans designspace)
-
-|          | With Components | Decomposed |
-|----------|-----------------|------------|
-| Variable | `i j ï !`       | `i j ï !`  |
-| Static   | `i j ï !`       | `i j ï !`  |
-
-### Support/Sparse Sources Test
-
-Goal: Test whether sparse sources are the culprit, by building fonts *without* sparse sources included
-#### Test (fonts with no sparse/support sources)
-
-|          | With Components | Decomposed |
-|----------|-----------------|------------|
-| Variable | `i j ï !`       | `i j ï !`  |
-| Static   | `i j ï !`       | `i j ï !`  |
-### AVAR Test
-
-Goal: Test whether the removal of the AVAR table affects the rendering of dot components.
-
-#### Test (fonts with no axis mapping)
-
-|          | With Components | Decomposed |
-|----------|-----------------|------------|
-| Variable | `i j ï !`       | `i j ï !`  |
-| Static   | `i j ï !`       | `i j ï !`  |
-
-### Path Direction Test
-
-Goal: Test whether path direction matters for components.
-
-|                | With Components | Decomposed |
-|----------------|-----------------|------------|
-| Variable (CW   | `i j ï !`       | `i j ï !`  |
-| Variable (CCW) | `i j ï !`       | `i j ï !`  |
-| Static         | `i j ï !`       | `i j ï !`  |
-
+Testing for [name-sans-roadmap/issues/44](https://github.com/arrowtype/name-sans-roadmap/issues/44).
 
 ## Building the Fonts, etc
 
@@ -66,3 +22,5 @@ Build:
 ```
 ./build.sh
 ```
+
+This will build several types of working fonts that were different experiments.

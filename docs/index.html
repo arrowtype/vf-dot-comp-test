@@ -9,6 +9,10 @@
 </head>
 <style>
     @font-face {
+        font-family: "NameSans-Problem-VF";
+        src: url("fonts/Dot_Comp_Test-wght_1_1000-opsz_12_96--w_sparse_supports-VF.ttf");
+    }
+    @font-face {
         font-family: "NameSans-VF";
         src: url("fonts/full-designspace/Dot_Comp_Test-VF.ttf");
     }
@@ -49,6 +53,9 @@
     .test {
         margin: 4rem auto;
     }
+    .variable-problem {
+        font-family: "NameSans-Problem-VF",fantasy;
+    }
     .variable {
         font-family: "NameSans-VF",fantasy;
     }
@@ -81,6 +88,9 @@
     .test-text {
         font-size: 5rem;
     }
+    .highlight {
+        background: yellow;
+    }
     @media (min-width: 800px) {
         .comparison {
             display: grid;
@@ -96,10 +106,25 @@
     <p>Relevant to <a href="https://github.com/arrowtype/name-sans-roadmap/issues/44">Name Sans issue #44</a></p>
     <p><i>How to interpret results:</i></p>
     <p>If the “Variable” samples look the same as the “Static” samples, the variable font is working as desired.</p>
-    <p><i>Tentative outcome (?):</i></p>
-    <p>To render correctly in a variable font, dots <i>must</i> have clockwise path direction in font sources... but then again, maybe the sources originally had start points switched around...? Investigation ongoing.</p>
+    <p class="highlight"><i>Outcome / Lesson Learned:</i></p>
+    <p class="highlight">To render correctly in a variable font, both marks (dots) and bases (idotless, etc) <i>must</i> have matching path direction in font sources.</p>
     <div class="test">
-        <h2>Basic Test</h2>
+        <h2>Original Problem</h2>
+        <h3>With Components</h3>
+        <div class="comparison">
+            <div>
+                <h4>Variable, showing problem</h4>
+                <span class="test-text variable-problem thin">i j ! ; ï</span>
+                <p class="highlight"><i>Why?</i> The path directions are mismatched between dot and base.</p>
+            </div>
+            <div>
+                <h4>Static</h4>
+                <span class="test-text static thin">i j ! ; ï</span>
+            </div>
+        </div>
+    </div>
+    <div class="test">
+        <h2>Basic Test: Matching direction in dot and base</h2>
         <h3>With Components</h3>
         <div class="comparison">
             <div>
