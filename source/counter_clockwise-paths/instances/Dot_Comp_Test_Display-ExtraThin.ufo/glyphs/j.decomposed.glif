@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="j.decomposed" format="2">
+  <advance width="352.9191919191919"/>
+  <outline>
+    <contour>
+      <point x="164.56565656565655" y="973.959595959596" type="line"/>
+      <point x="187.35353535353542" y="973.959595959596" type="line"/>
+      <point x="187.35353535353542" y="-137.07070707070707" type="line" smooth="yes"/>
+      <point x="187.35353535353542" y="-282.5252525252525"/>
+      <point x="104.87878787878795" y="-356.0"/>
+      <point x="-25.080808080808094" y="-356.0" type="curve"/>
+      <point x="-148.07070707070704" y="-356.0" type="line"/>
+      <point x="-148.07070707070704" y="-336.1818181818182" type="line"/>
+      <point x="-28.54545454545453" y="-336.1818181818182" type="line"/>
+      <point x="90.02020202020205" y="-336.1818181818182"/>
+      <point x="164.56565656565655" y="-269.14141414141415"/>
+      <point x="164.56565656565655" y="-137.07070707070707" type="curve"/>
+    </contour>
+    <contour>
+      <point x="163.0707070707071" y="1187.7171717171718" type="line"/>
+      <point x="163.0707070707071" y="1454.0" type="line"/>
+      <point x="188.84848484848487" y="1454.0" type="line"/>
+      <point x="188.84848484848487" y="1187.7171717171718" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5534,0.5534,0.5534,0.4845</string>
+    </dict>
+  </lib>
+</glyph>

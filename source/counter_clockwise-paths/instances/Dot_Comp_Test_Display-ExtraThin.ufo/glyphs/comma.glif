@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="comma" format="2">
+  <advance width="416.7878787878788"/>
+  <unicode hex="002C"/>
+  <outline>
+    <contour>
+      <point x="196.00000000000003" y="0.0" type="line"/>
+      <point x="196.00000000000003" y="258.3636363636364" type="line"/>
+      <point x="220.78787878787875" y="258.3636363636364" type="line"/>
+      <point x="220.78787878787875" y="0.0" type="line"/>
+      <point x="175.35353535353536" y="-313.010101010101" type="line"/>
+      <point x="158.0" y="-313.010101010101" type="line"/>
+      <point x="202.45454545454547" y="-1.4848484848484853" type="line"/>
+      <point x="200.95959595959593" y="0.0" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.rafalbuchner.mirroringDrawingLocal</key>
+      <dict>
+        <key>mirroringOptions</key>
+        <integer>3</integer>
+        <key>offset</key>
+        <array>
+          <integer>0</integer>
+          <integer>0</integer>
+        </array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

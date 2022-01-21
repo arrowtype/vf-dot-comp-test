@@ -26,12 +26,20 @@
         font-weight: 100;
         src: url("fonts/full-designspace/static/Dot_Comp_Test_Display-Thin.ttf");
     }
+    @font-face {
+        font-family: "NameSans-CCW-VF";
+        src: url("fonts/counter_clockwise-paths/Dot_Comp_Test-CCW-VF.ttf");
+    }
+    @font-face {
+        font-family: "NameSans-CCW";
+        font-weight: 100;
+        src: url("fonts/counter_clockwise-paths/static/Dot_Comp_Test_Display-Thin.ttf");
+    }
     body {
-        /* font-family: "NameSans-VF",sans-serif; */
         font-family: 'Recursive', monospace;
         max-width: 800px;
         margin: 0 auto;
-        padding: 4rem 0 8rem;
+        padding: 4rem 1rem 8rem;
     }
     i {
         font-style: normal;
@@ -39,7 +47,7 @@
         font-variation-settings: 'slnt' -15;
     }
     .test {
-        margin-top: 5rem;
+        margin: 4rem auto;
     }
     .variable {
         font-family: "NameSans-VF",fantasy;
@@ -53,11 +61,18 @@
     .static-no_supports {
         font-family: "NameSans-no_supports",fantasy;
     }
+    .variable-CCW {
+        font-family: "NameSans-CCW-VF",fantasy;
+    }
+    .static-CCW {
+        font-family: "NameSans-CCW",fantasy;
+    }
     .decomposed {
         font-feature-settings: "ss01";
     }
     .thin {
         font-weight: 100;
+        font-variation-settings: 'wght' 100;
     }
     h3 {
         border-top: 1px #ccc solid;
@@ -66,11 +81,13 @@
     .test-text {
         font-size: 5rem;
     }
-    .comparison {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 1rem;
-        margin-bottom: 3rem;
+    @media (min-width: 800px) {
+        .comparison {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 1rem;
+            margin-bottom: 3rem;
+        }
     }
 
 </style>
@@ -79,6 +96,8 @@
     <p>Relevant to <a href="https://github.com/arrowtype/name-sans-roadmap/issues/44">Name Sans issue #44</a></p>
     <p><i>How to interpret results:</i></p>
     <p>If the “Variable” samples look the same as the “Static” samples, the variable font is working as desired.</p>
+    <p><i>Tentative outcome (?):</i></p>
+    <p>To render correctly in a variable font, dots <i>must</i> have clockwise path direction in font sources... but then again, maybe the sources originally had start points switched around...? Investigation ongoing.</p>
     <div class="test">
         <h2>Basic Test</h2>
         <h3>With Components</h3>
@@ -129,7 +148,31 @@
             </div>
         </div>
     </div>
-    <p><i>Source:</i></p>
-    <p><a href="https://github.com/arrowtype/vf-dot-comp-test">arrowtype/vf-dot-comp-test</a></p>
+    <div class="test">
+        <h2>Test: Counter-Clockwise Path Direction</h2>
+        <h3>With Components</h3>
+        <div class="comparison">
+            <div>
+                <h4>Variable</h4>
+                <span class="test-text variable-CCW thin">i j ! ; ï</span>
+            </div>
+            <div>
+                <h4>Static</h4>
+                <span class="test-text static-CCW thin">i j ! ; ï</span>
+            </div>
+        </div>
+        <h3>Decomposed</h3>
+        <div class="comparison">
+            <div>
+                <h4>Variable</h4>
+                <span class="test-text variable-CCW thin decomposed">i j ! ; ï</span>
+            </div>
+            <div>
+                <h4>Static</h4>
+                <span class="test-text static-CCW thin decomposed">i j ! ; ï</span>
+            </div>
+        </div>
+    </div>
+    <p><i>Source:</i> <a href="https://github.com/arrowtype/vf-dot-comp-test">arrowtype/vf-dot-comp-test</a></p>
 </body>
 </html>

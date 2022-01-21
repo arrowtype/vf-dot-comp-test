@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.1">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="1" maximum="1000" default="700">
+      <labelname xml:lang="en">Weight</labelname>
+      <map input="1000" output="1000"/>
+      <map input="900" output="856"/>
+      <map input="800" output="756"/>
+      <map input="700" output="700"/>
+      <map input="600" output="600"/>
+      <map input="500" output="500"/>
+      <map input="400" output="400"/>
+      <map input="300" output="300"/>
+      <map input="200" output="200"/>
+      <map input="100" output="100"/>
+      <map input="50" output="50"/>
+      <map input="1" output="1"/>
+    </axis>
+    <axis tag="opsz" name="Optical Size" minimum="12" maximum="96" default="12">
+      <labelname xml:lang="en">Optical Size</labelname>
+      <map input="96" output="96"/>
+      <map input="24" output="54"/>
+      <map input="12" output="12"/>
+    </axis>
+  </axes>
+  <sources>
+    <source filename="Dot_Comp_Test-Display_Hairline.ufo" familyname="Dot Comp Test" stylename="Display Hairline">
+      <location>
+        <dimension name="Weight" xvalue="1"/>
+        <dimension name="Optical Size" xvalue="96"/>
+      </location>
+    </source>
+    <source filename="sparse--Dot_Comp_Test-Display_100.ufo" familyname="Dot Comp Test" stylename="Display Thin">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+        <dimension name="Optical Size" xvalue="96"/>
+      </location>
+    </source>
+    <source filename="sparse--Dot_Comp_Test-Display_200.ufo" familyname="Dot Comp Test" stylename="Display ExtraLight">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Optical Size" xvalue="96"/>
+      </location>
+    </source>
+    <source filename="Dot_Comp_Test-Display_Bold.ufo" familyname="Dot Comp Test" stylename="Display Bold">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+        <dimension name="Optical Size" xvalue="96"/>
+      </location>
+    </source>
+    <source filename="Dot_Comp_Test-Display_Ultra.ufo" familyname="Dot Comp Test" stylename="Display Ultra">
+      <location>
+        <dimension name="Weight" xvalue="1000"/>
+        <dimension name="Optical Size" xvalue="96"/>
+      </location>
+    </source>
+    <source filename="Dot_Comp_Test-Text_Hairline.ufo" familyname="Dot Comp Test" stylename="Text Hairline">
+      <location>
+        <dimension name="Weight" xvalue="1"/>
+        <dimension name="Optical Size" xvalue="12"/>
+      </location>
+    </source>
+    <source filename="sparse--Dot_Comp_Test-Text_100.ufo" familyname="Dot Comp Test" stylename="Text Thin">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+        <dimension name="Optical Size" xvalue="12"/>
+      </location>
+    </source>
+    <source filename="sparse--Dot_Comp_Test-Text_200.ufo" familyname="Dot Comp Test" stylename="Text ExtraLight">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Optical Size" xvalue="12"/>
+      </location>
+    </source>
+    <source filename="Dot_Comp_Test-Text_Bold.ufo" familyname="Dot Comp Test" stylename="Text Bold">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+        <dimension name="Optical Size" xvalue="12"/>
+      </location>
+    </source>
+    <source filename="Dot_Comp_Test-Text_Ultra.ufo" familyname="Dot Comp Test" stylename="Text Ultra">
+      <location>
+        <dimension name="Weight" xvalue="1000"/>
+        <dimension name="Optical Size" xvalue="12"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <source filename="Dot_Comp_Test-Text_Bold.ufo" familyname="Dot Comp Test" stylename="Text Bold">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+        <dimension name="Optical Size" xvalue="12"/>
+      </location>
+    </source>
+    <instance familyname="Dot Comp Test" stylename="Display ExtraThin" filename="instances/Dot_Comp_Test_Display-ExtraThin.ufo">
+      <location>
+        <dimension name="Weight" xvalue="50"/>
+        <dimension name="Optical Size" xvalue="96"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Dot Comp Test" stylename="Display Thin" filename="instances/Dot_Comp_Test_Display-Thin.ufo">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+        <dimension name="Optical Size" xvalue="96"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Dot Comp Test" stylename="Display Regular" filename="instances/Dot_Comp_Test_Display-Regular.ufo">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Optical Size" xvalue="96"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+  </instances>
+</designspace>

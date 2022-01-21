@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="exclam.decomposed" format="2">
+	<advance width="432"/>
+	<outline>
+		<contour>
+			<point x="202.9024321608" y="429.7889447236" type="line"/>
+			<point x="193.3730603015" y="997.6030150754" type="line"/>
+			<point x="193.3730603015" y="1454" type="line"/>
+			<point x="237.7366030151" y="1454" type="line"/>
+			<point x="237.7366030151" y="997.6030150754" type="line"/>
+			<point x="228.2843417085" y="429.7889447236" type="line"/>
+		</contour>
+		<contour>
+			<point x="191" y="0" type="line"/>
+			<point x="191" y="222" type="line"/>
+			<point x="239" y="222" type="line"/>
+			<point x="239" y="0" type="line"/>
+		</contour>
+	</outline>
+	<guideline x="0" y="90" angle="0" identifier="wN0U5bjh0R"/>
+</glyph>
