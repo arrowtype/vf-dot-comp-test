@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="period" format="2">
+  <advance width="403.57081545064375"/>
+  <unicode hex="002E"/>
+  <outline>
+    <contour>
+      <point x="188.28898426323317" y="0.0" type="line"/>
+      <point x="188.28898426323317" y="296.73390557939916" type="line"/>
+      <point x="215.28183118741057" y="296.73390557939916" type="line"/>
+      <point x="215.28183118741057" y="0.0" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.rafalbuchner.mirroringDrawingLocal</key>
+      <dict>
+        <key>mirroringOptions</key>
+        <integer>3</integer>
+        <key>offset</key>
+        <array>
+          <integer>0</integer>
+          <integer>0</integer>
+        </array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="i.decomposed" format="2">
+  <advance width="335.54506437768237"/>
+  <outline>
+    <contour>
+      <point x="189.7339055793991" y="0.0" type="line"/>
+      <point x="189.7339055793991" y="977.648068669528" type="line"/>
+      <point x="145.81115879828323" y="977.648068669528" type="line"/>
+      <point x="145.81115879828323" y="0.0" type="line"/>
+    </contour>
+    <contour>
+      <point x="143.6781115879828" y="1160.5665236051502" type="line"/>
+      <point x="143.6781115879828" y="1454.0" type="line"/>
+      <point x="191.86695278969955" y="1454.0" type="line"/>
+      <point x="191.86695278969955" y="1160.5665236051502" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5534,0.5534,0.5534,0.4845</string>
+    </dict>
+  </lib>
+</glyph>

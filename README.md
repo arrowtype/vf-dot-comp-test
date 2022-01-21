@@ -55,7 +55,14 @@ Goal: Test whether path direction matters for components.
 Setup:
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+python3 -m venv venv                  # create virtual environment
+source venv/bin/activate              # activate virtual environment
+pip install -r requirements.txt       # install dependencies
+chmod +x ./build.sh                     # give build script permission to run
+```
+
+Build:
+
+```
+./build.sh
 ```

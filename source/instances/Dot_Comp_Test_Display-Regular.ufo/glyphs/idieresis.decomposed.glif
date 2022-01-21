@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="idieresis.decomposed" format="2">
+  <advance width="394.77253218884124"/>
+  <outline>
+    <contour>
+      <point x="282.86695278969955" y="0.0" type="line"/>
+      <point x="282.86695278969955" y="1000.824034334764" type="line"/>
+      <point x="111.90557939914162" y="1000.824034334764" type="line"/>
+      <point x="111.90557939914162" y="0.0" type="line"/>
+    </contour>
+    <contour>
+      <point x="-83.09442060085837" y="1162.2832618025752" type="line"/>
+      <point x="-83.09442060085837" y="1454.0" type="line"/>
+      <point x="84.1587982832618" y="1454.0" type="line"/>
+      <point x="84.1587982832618" y="1162.2832618025752" type="line"/>
+    </contour>
+    <contour>
+      <point x="310.6137339055794" y="1162.2832618025752" type="line"/>
+      <point x="310.6137339055794" y="1454.0" type="line"/>
+      <point x="477.8669527896996" y="1454.0" type="line"/>
+      <point x="477.8669527896996" y="1162.2832618025752" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5534,0.5534,0.5534,0.4845</string>
+    </dict>
+  </lib>
+</glyph>
