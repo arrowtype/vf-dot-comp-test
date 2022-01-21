@@ -89,9 +89,14 @@
         font-weight: 100;
         font-variation-settings: 'wght' 100;
     }
-    h3 {
+    h2 {
         border-top: 1px #ccc solid;
         padding-top: 1rem;
+    }
+    h3 {
+        border-top: 1px #ccc dotted;
+        padding-top: 1rem;
+        font-weight: 400;
     }
     .test-text {
         font-size: 5rem;
@@ -118,7 +123,6 @@
     <p class="highlight">To render correctly in a variable font on macOS, both marks (e.g. dots) and bases (e.g. idotless) <i>must</i> have matching path direction in font sources.</p>
     <div class="test">
         <h2>Original Problem</h2>
-        <h3>With Components</h3>
         <div class="comparison">
             <div>
                 <h4>Variable Font, showing problem</h4>
@@ -131,15 +135,14 @@
                 <p>Static fonts don’t exhibit this issue – but potentially, this is just because FontMake corrects their paths during build time. Or, it might be that macOS corrects path direction in static fonts, before rendering. ¯\_(ツ)_/¯</p>
             </div>
         </div>
-        <h3>Decomposed</h3>
         <div class="comparison">
             <div>
-                <h4>Variable Font</h4>
+                <h4>Variable Font, Decomposed</h4>
                 <span class="test-text variable-problem thin decomposed">i j ! ; ï</span>
                 <p>Decomposing glyphs such as i and j mostly fixes this issue – however, this isn’t very practical to do in the sources of a full type family, as there can be many affected glyphs.</p>
             </div>
             <div>
-                <h4>Static Font</h4>
+                <h4>Static Font, Decomposed</h4>
                 <span class="test-text static-problem thin decomposed">i j ! ; ï</span>
             </div>
         </div>
