@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-	<dict>
-		<key>color</key>
-		<string>0,0.4,0.2,0.7</string>
-		<key>lib</key>
-		<dict>
-			<key>com.typemytype.robofont.layerShow</key>
-			<false/>
-			<key>org.unifiedfontobject.normalizer.imageReferences</key>
-			<dict>
-			</dict>
-			<key>org.unifiedfontobject.normalizer.modTimes</key>
-			<string>version: 0.4.3.dev0
+  <dict>
+    <key>color</key>
+    <string>0,0.4,0.2,0.7</string>
+    <key>lib</key>
+    <dict>
+      <key>com.typemytype.robofont.layerShow</key>
+      <false/>
+      <key>org.unifiedfontobject.normalizer.imageReferences</key>
+      <dict/>
+      <key>org.unifiedfontobject.normalizer.modTimes</key>
+      <string>version: 0.4.3.dev0
 1607815449.3 G_.glif
 1607815449.3 P_.R_E_C_T_.glif
 1617727502.2 R_.R_E_C_T_grot.glif
@@ -59,6 +58,6 @@
 1617727502.2 tildecomb.glif
 1594496372.7 uhorn.glif
 1617727502.2 y.bold.glif</string>
-		</dict>
-	</dict>
+    </dict>
+  </dict>
 </plist>

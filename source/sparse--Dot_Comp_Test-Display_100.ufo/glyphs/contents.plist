@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-	<dict>
-		<key>comma</key>
-		<string>comma.glif</string>
-		<key>dieresiscomb</key>
-		<string>dieresiscomb.glif</string>
-		<key>dotcomb</key>
-		<string>dotcomb.glif</string>
-		<key>exclam</key>
-		<string>exclam.glif</string>
-		<key>exclam.decomposed</key>
-		<string>exclam.decomposed.glif</string>
-		<key>i.decomposed</key>
-		<string>i.decomposed.glif</string>
-		<key>j.decomposed</key>
-		<string>j.decomposed.glif</string>
-		<key>period</key>
-		<string>period.glif</string>
-	</dict>
+  <dict>
+    <key>comma</key>
+    <string>comma.glif</string>
+    <key>dieresiscomb</key>
+    <string>dieresiscomb.glif</string>
+    <key>dotcomb</key>
+    <string>dotcomb.glif</string>
+    <key>exclam</key>
+    <string>exclam.glif</string>
+    <key>exclam.decomposed</key>
+    <string>exclam.decomposed.glif</string>
+    <key>i.decomposed</key>
+    <string>i.decomposed.glif</string>
+    <key>j.decomposed</key>
+    <string>j.decomposed.glif</string>
+    <key>period</key>
+    <string>period.glif</string>
+  </dict>
 </plist>

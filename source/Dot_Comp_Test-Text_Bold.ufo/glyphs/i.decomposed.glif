@@ -1,24 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="i.decomposed" format="2">
-	<advance width="602"/>
-	<outline>
-		<contour>
-			<point x="451" y="0" type="line"/>
-			<point x="451" y="1070" type="line"/>
-			<point x="151" y="1070" type="line"/>
-			<point x="151" y="0" type="line"/>
-		</contour>
-		<contour>
-			<point x="131" y="1208.043375" type="line"/>
-			<point x="131" y="1506.043375" type="line"/>
-			<point x="471" y="1506.043375" type="line"/>
-			<point x="471" y="1208.043375" type="line"/>
-		</contour>
-	</outline>
-	<lib>
-		<dict>
-			<key>public.markColor</key>
-			<string>0.5534,0.5534,0.5534,0.4845</string>
-		</dict>
-	</lib>
+  <advance width="602"/>
+  <outline>
+    <contour>
+      <point x="451" y="0" type="line"/>
+      <point x="151" y="0" type="line"/>
+      <point x="151" y="1070" type="line"/>
+      <point x="451" y="1070" type="line"/>
+    </contour>
+    <contour>
+      <point x="131" y="1208.043375" type="line"/>
+      <point x="131" y="1506.043375" type="line"/>
+      <point x="471" y="1506.043375" type="line"/>
+      <point x="471" y="1208.043375" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5534,0.5534,0.5534,0.4845</string>
+    </dict>
+  </lib>
 </glyph>

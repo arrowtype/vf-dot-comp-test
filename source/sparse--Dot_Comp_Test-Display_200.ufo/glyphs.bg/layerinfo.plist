@@ -1,26 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-	<dict>
-		<key>color</key>
-		<string>0.5,1,0,0.7</string>
-		<key>lib</key>
-		<dict>
-			<key>com.typemytype.robofont.layerShow</key>
-			<true/>
-			<key>com.typemytype.robofont.layerShowCoordinates</key>
-			<false/>
-			<key>com.typemytype.robofont.layerShowFill</key>
-			<false/>
-			<key>com.typemytype.robofont.layerShowPoints</key>
-			<true/>
-			<key>com.typemytype.robofont.layerShowStroke</key>
-			<true/>
-			<key>org.unifiedfontobject.normalizer.imageReferences</key>
-			<dict>
-			</dict>
-			<key>org.unifiedfontobject.normalizer.modTimes</key>
-			<string>version: 0.4.3.dev0
+  <dict>
+    <key>color</key>
+    <string>0.5,1,0,0.7</string>
+    <key>lib</key>
+    <dict>
+      <key>com.typemytype.robofont.layerShow</key>
+      <true/>
+      <key>com.typemytype.robofont.layerShowCoordinates</key>
+      <false/>
+      <key>com.typemytype.robofont.layerShowFill</key>
+      <false/>
+      <key>com.typemytype.robofont.layerShowPoints</key>
+      <true/>
+      <key>com.typemytype.robofont.layerShowStroke</key>
+      <true/>
+      <key>org.unifiedfontobject.normalizer.imageReferences</key>
+      <dict/>
+      <key>org.unifiedfontobject.normalizer.modTimes</key>
+      <string>version: 0.4.3.dev0
 1613794389.8 a.glif
 1617727504.2 a.italic.glif
 1617727504.2 ae.glif
@@ -47,6 +46,6 @@
 1617153792.8 r.glif
 1607815450.3 six.glif
 1617727504.2 u.glif</string>
-		</dict>
-	</dict>
+    </dict>
+  </dict>
 </plist>
