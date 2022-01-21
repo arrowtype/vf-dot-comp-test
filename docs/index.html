@@ -17,11 +17,11 @@
         src: url("../fonts/full-designspace/static/Dot_Comp_Test_Display-Thin.ttf");
     }
     @font-face {
-        font-family: "NameSansNS-VF";
+        font-family: "NameSans-no_supports-VF";
         src: url("../fonts/no-supports/Dot_Comp_Test-no_supports-VF.ttf");
     }
     @font-face {
-        font-family: "NameSansNS";
+        font-family: "NameSans-no_supports";
         font-weight: 100;
         src: url("../fonts/full-designspace/static/Dot_Comp_Test_Display-Thin.ttf");
     }
@@ -35,6 +35,12 @@
     }
     .static {
         font-family: "NameSans",fantasy;
+    }
+    .variable-no_supports {
+        font-family: "NameSans-no_supports-VF",fantasy;
+    }
+    .static-no_supports {
+        font-family: "NameSans-no_supports",fantasy;
     }
     .decomposed {
         font-feature-settings: "ss01";
@@ -85,7 +91,31 @@
             </div>
         </div>
     </div>
-    <h2>Test: No Support Sources</h2>
+    <div class="test">
+        <h2>Test: No Support Sources</h2>
+        <h3>With Components</h3>
+        <div class="comparison">
+            <div>
+                <h4>Variable</h4>
+                <span class="test-text variable-no_supports thin">i j ! ; ï</span>
+            </div>
+            <div>
+                <h4>Static</h4>
+                <span class="test-text static-no_supports thin">i j ! ; ï</span>
+            </div>
+        </div>
+        <h3>Decomposed</h3>
+        <div class="comparison">
+            <div>
+                <h4>Variable</h4>
+                <span class="test-text variable-no_supports thin decomposed">i j ! ; ï</span>
+            </div>
+            <div>
+                <h4>Static</h4>
+                <span class="test-text static-no_supports thin decomposed">i j ! ; ï</span>
+            </div>
+        </div>
+    </div>
     <h2>Test: No AVAR</h2>
 </body>
 </html>
