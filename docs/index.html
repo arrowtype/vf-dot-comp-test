@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VF Dot Comp Test</title>
-    <link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,MONO@-15..0,550,1,1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,MONO@-15..0,400..700,1,1&display=swap" rel="stylesheet">
 </head>
 <style>
     @font-face {
@@ -29,12 +29,17 @@
     body {
         /* font-family: "NameSans-VF",sans-serif; */
         font-family: 'Recursive', monospace;
-        width: 800px;
+        max-width: 800px;
         margin: 0 auto;
+        padding: 4rem 0 8rem;
     }
     i {
         font-style: normal;
+        font-weight: bold;
         font-variation-settings: 'slnt' -15;
+    }
+    .test {
+        margin-top: 5rem;
     }
     .variable {
         font-family: "NameSans-VF",fantasy;
@@ -124,5 +129,7 @@
             </div>
         </div>
     </div>
+    <p><i>Source:</i></p>
+    <p><a href="https://github.com/arrowtype/vf-dot-comp-test">arrowtype/vf-dot-comp-test</a></p>
 </body>
 </html>
