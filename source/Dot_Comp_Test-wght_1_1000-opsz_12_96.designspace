@@ -18,6 +18,9 @@
     </axis>
     <axis tag="opsz" name="Optical Size" minimum="12" maximum="96" default="12">
       <labelname xml:lang="en">Optical Size</labelname>
+      <map input="96" output="96"/>
+      <map input="24" output="54"/>
+      <map input="12" output="12"/>
     </axis>
   </axes>
   <sources>

@@ -11,6 +11,6 @@
 			<point x="489.608875" y="935.43525" type="line"/>
 			<point x="417.391375" y="523.82625" type="line"/>
 		</contour>
-		<component base="period" xOffset="7.261" yOffset="0.260875"/>
+		<component base="period" xOffset="7"/>
 	</outline>
 </glyph>
