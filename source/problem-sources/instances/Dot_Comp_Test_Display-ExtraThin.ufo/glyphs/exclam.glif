@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="exclam" format="2">
+  <advance width="408.76767676767673"/>
+  <unicode hex="0021"/>
+  <outline>
+    <contour>
+      <point x="197.39615329170908" y="458.68341708541817" type="line"/>
+      <point x="192.6795955027626" y="1007.9045226130769" type="line"/>
+      <point x="192.6795955027626" y="1454.0" type="line"/>
+      <point x="215.64740957313032" y="1454.0" type="line"/>
+      <point x="215.64740957313032" y="1007.9045226130769" type="line"/>
+      <point x="210.969017613298" y="458.68341708541817" type="line"/>
+    </contour>
+    <component base="period" xOffset="-4.505050505050504"/>
+  </outline>
+</glyph>

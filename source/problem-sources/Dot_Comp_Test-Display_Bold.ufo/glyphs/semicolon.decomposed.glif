@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="semicolon.decomposed" format="2">
+	<advance width="502"/>
+	<outline>
+		<contour>
+			<point x="85" y="691" type="line"/>
+			<point x="85" y="1024" type="line"/>
+			<point x="417" y="1024" type="line"/>
+			<point x="417" y="691" type="line"/>
+		</contour>
+		<contour>
+			<point x="86" y="0" type="line"/>
+			<point x="86" y="333" type="line"/>
+			<point x="418" y="333" type="line"/>
+			<point x="418" y="0" type="line"/>
+			<point x="271" y="-289" type="line"/>
+			<point x="89" y="-289" type="line"/>
+			<point x="179" y="-7" type="line"/>
+			<point x="175" y="0" type="line"/>
+		</contour>
+	</outline>
+	<guideline x="0" y="844" angle="0" identifier="RcO1FAJnsD"/>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0,0.95,0.95,0.25</string>
+		</dict>
+	</lib>
+</glyph>

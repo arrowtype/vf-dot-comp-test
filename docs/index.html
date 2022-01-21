@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VF Dot Comp Test</title>
-    <link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,MONO@-15..0,400..700,1,1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL@-15..0,400..700,1&display=swap" rel="stylesheet">
 </head>
 <style>
     @font-face {
         font-family: "NameSans-Problem-VF";
-        src: url("fonts/Dot_Comp_Test-wght_1_1000-opsz_12_96--w_sparse_supports-VF.ttf");
+        src: url("fonts/problem-fonts/Dot_Comp_Test-VF.ttf");
+    }
+    @font-face {
+        font-family: "NameSans-Problem";
+        src: url("fonts/problem-fonts/static/Dot_Comp_Test_Display-Thin.ttf");
     }
     @font-face {
         font-family: "NameSans-VF";
@@ -56,6 +60,9 @@
     .variable-problem {
         font-family: "NameSans-Problem-VF",fantasy;
     }
+    .static-problem {
+        font-family: "NameSans-Problem",fantasy;
+    }
     .variable {
         font-family: "NameSans-VF",fantasy;
     }
@@ -94,7 +101,7 @@
     @media (min-width: 800px) {
         .comparison {
             display: grid;
-            grid-template-columns: auto auto;
+            grid-template-columns: 50% 50%;
             grid-gap: 1rem;
             margin-bottom: 3rem;
         }
@@ -106,20 +113,21 @@
     <p>Relevant to <a href="https://github.com/arrowtype/name-sans-roadmap/issues/44">Name Sans issue #44</a></p>
     <p><i>How to interpret results:</i></p>
     <p>If the “Variable” samples look the same as the “Static” samples, the variable font is working as desired.</p>
-    <p class="highlight"><i>Outcome / Lesson Learned:</i></p>
+    <p><i class="highlight">Outcome / Lesson Learned:</i></p>
     <p class="highlight">To render correctly in a variable font, both marks (dots) and bases (idotless, etc) <i>must</i> have matching path direction in font sources.</p>
     <div class="test">
         <h2>Original Problem</h2>
         <h3>With Components</h3>
         <div class="comparison">
             <div>
-                <h4>Variable, showing problem</h4>
+                <h4>Variable Font, showing problem</h4>
                 <span class="test-text variable-problem thin">i j ! ; ï</span>
-                <p class="highlight"><i>Why?</i> The path directions are mismatched between dot and base.</p>
+                <p class="highlight"><i>Huh?</i> The path directions are mismatched between dot and base, resulting in dots that are rendered too thin.</p>
             </div>
             <div>
-                <h4>Static</h4>
-                <span class="test-text static thin">i j ! ; ï</span>
+                <h4>Static Font</h4>
+                <span class="test-text static-problem thin">i j ! ; ï</span>
+                <p>Note: static fonts don’t exhibit this issue – but potentially, this is just because FontMake corrects their paths during build time. Or, it might be that macOS corrects path direction in static fonts, before rendering. ¯\_(ツ)_/¯</p>
             </div>
         </div>
     </div>
@@ -128,22 +136,22 @@
         <h3>With Components</h3>
         <div class="comparison">
             <div>
-                <h4>Variable</h4>
+                <h4>Variable Font</h4>
                 <span class="test-text variable thin">i j ! ; ï</span>
             </div>
             <div>
-                <h4>Static</h4>
+                <h4>Static Font</h4>
                 <span class="test-text static thin">i j ! ; ï</span>
             </div>
         </div>
         <h3>Decomposed</h3>
         <div class="comparison">
             <div>
-                <h4>Variable</h4>
+                <h4>Variable Font</h4>
                 <span class="test-text variable thin decomposed">i j ! ; ï</span>
             </div>
             <div>
-                <h4>Static</h4>
+                <h4>Static Font</h4>
                 <span class="test-text static thin decomposed">i j ! ; ï</span>
             </div>
         </div>
@@ -153,22 +161,22 @@
         <h3>With Components</h3>
         <div class="comparison">
             <div>
-                <h4>Variable</h4>
+                <h4>Variable Font</h4>
                 <span class="test-text variable-no_supports thin">i j ! ; ï</span>
             </div>
             <div>
-                <h4>Static</h4>
+                <h4>Static Font</h4>
                 <span class="test-text static-no_supports thin">i j ! ; ï</span>
             </div>
         </div>
         <h3>Decomposed</h3>
         <div class="comparison">
             <div>
-                <h4>Variable</h4>
+                <h4>Variable Font</h4>
                 <span class="test-text variable-no_supports thin decomposed">i j ! ; ï</span>
             </div>
             <div>
-                <h4>Static</h4>
+                <h4>Static Font</h4>
                 <span class="test-text static-no_supports thin decomposed">i j ! ; ï</span>
             </div>
         </div>
@@ -178,22 +186,22 @@
         <h3>With Components</h3>
         <div class="comparison">
             <div>
-                <h4>Variable</h4>
+                <h4>Variable Font</h4>
                 <span class="test-text variable-CCW thin">i j ! ; ï</span>
             </div>
             <div>
-                <h4>Static</h4>
+                <h4>Static Font</h4>
                 <span class="test-text static-CCW thin">i j ! ; ï</span>
             </div>
         </div>
         <h3>Decomposed</h3>
         <div class="comparison">
             <div>
-                <h4>Variable</h4>
+                <h4>Variable Font</h4>
                 <span class="test-text variable-CCW thin decomposed">i j ! ; ï</span>
             </div>
             <div>
-                <h4>Static</h4>
+                <h4>Static Font</h4>
                 <span class="test-text static-CCW thin decomposed">i j ! ; ï</span>
             </div>
         </div>
