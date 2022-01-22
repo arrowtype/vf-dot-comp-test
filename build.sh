@@ -14,10 +14,10 @@ fontmake -m source/problem-sources/Dot_Comp_Test-wght_1_1000-opsz_12_96--w_spars
 # PATH DIRECTIONS MATCHING
 
 # build VF with supports
-fontmake -m source/Dot_Comp_Test-wght_1_1000-opsz_12_96--w_sparse_supports.designspace -o variable  --output-path fonts/full-designspace/Dot_Comp_Test-VF.ttf
+fontmake -m source/Dot_Comp_Test-wght_1_1000-opsz_12_96--w_sparse_supports.designspace -o variable  --output-path fonts/clockwise-paths/Dot_Comp_Test-VF.ttf
 
 # build statics with supports
-fontmake -m source/Dot_Comp_Test-wght_1_1000-opsz_12_96--w_sparse_supports.designspace -o ttf -i  --output-dir fonts/full-designspace/static --expand-features-to-instances
+fontmake -m source/Dot_Comp_Test-wght_1_1000-opsz_12_96--w_sparse_supports.designspace -o ttf -i  --output-dir fonts/clockwise-paths/static --expand-features-to-instances
 
 
 # ---------------------------------------------

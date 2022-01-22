@@ -17,13 +17,22 @@
         src: url("fonts/problem-fonts/static/Dot_Comp_Test_Display-Thin.ttf");
     }
     @font-face {
-        font-family: "NameSans-VF";
-        src: url("fonts/full-designspace/Dot_Comp_Test-VF.ttf");
+        font-family: "NameSans-CCW-VF";
+        src: url("fonts/counter_clockwise-paths/Dot_Comp_Test-CCW-VF.ttf");
     }
     @font-face {
-        font-family: "NameSans";
+        font-family: "NameSans-CCW";
         font-weight: 100;
-        src: url("fonts/full-designspace/static/Dot_Comp_Test_Display-Thin.ttf");
+        src: url("fonts/counter_clockwise-paths/static/Dot_Comp_Test_Display-Thin.ttf");
+    }
+    @font-face {
+        font-family: "NameSans-CW-VF";
+        src: url("fonts/clockwise-paths/Dot_Comp_Test-VF.ttf");
+    }
+    @font-face {
+        font-family: "NameSans-CW";
+        font-weight: 100;
+        src: url("fonts/clockwise-paths/static/Dot_Comp_Test_Display-Thin.ttf");
     }
     @font-face {
         font-family: "NameSans-no_supports-VF";
@@ -32,16 +41,7 @@
     @font-face {
         font-family: "NameSans-no_supports";
         font-weight: 100;
-        src: url("fonts/full-designspace/static/Dot_Comp_Test_Display-Thin.ttf");
-    }
-    @font-face {
-        font-family: "NameSans-CCW-VF";
-        src: url("fonts/counter_clockwise-paths/Dot_Comp_Test-CCW-VF.ttf");
-    }
-    @font-face {
-        font-family: "NameSans-CCW";
-        font-weight: 100;
-        src: url("fonts/counter_clockwise-paths/static/Dot_Comp_Test_Display-Thin.ttf");
+        src: url("fonts/clockwise-paths/static/Dot_Comp_Test_Display-Thin.ttf");
     }
     body {
         font-family: 'Recursive', monospace;
@@ -64,23 +64,23 @@
     .static-problem {
         font-family: "NameSans-Problem",fantasy;
     }
-    .variable {
-        font-family: "NameSans-VF",fantasy;
+    .variable-CCW {
+        font-family: "NameSans-CCW-VF",fantasy;
     }
-    .static {
-        font-family: "NameSans",fantasy;
+    .static-CCW {
+        font-family: "NameSans-CCW",fantasy;
+    }
+    .variable-CW {
+        font-family: "NameSans-CW-VF",fantasy;
+    }
+    .static-CW {
+        font-family: "NameSans-CW",fantasy;
     }
     .variable-no_supports {
         font-family: "NameSans-no_supports-VF",fantasy;
     }
     .static-no_supports {
         font-family: "NameSans-no_supports",fantasy;
-    }
-    .variable-CCW {
-        font-family: "NameSans-CCW-VF",fantasy;
-    }
-    .static-CCW {
-        font-family: "NameSans-CCW",fantasy;
     }
     .decomposed {
         font-feature-settings: "ss01";
@@ -117,10 +117,12 @@
 <body>
     <h1>Tests for macOS rendering of dot components in variable fonts</h1>
     <p>Relevant to <a href="https://github.com/arrowtype/name-sans-roadmap/issues/44">Name Sans issue #44</a></p>
-    <p><i>How to interpret results:</i></p>
-    <p>If the “Variable” samples look the same as the “Static” samples, the variable font is working as desired.</p>
-    <p><i class="highlight">Outcome / Lesson Learned:</i></p>
+    <p>Asked about at <a href="https://github.com/googlefonts/fontmake/issues/846">FontMake issue #846</a></p>
+    <p><i class="highlight">Outcome / Lesson Learned / Best Practice:</i></p>
     <p class="highlight">To render correctly in a variable font on macOS, both marks (e.g. dots) and bases (e.g. idotless) <i>must</i> have matching path direction in font sources.</p>
+    <p>Generally, it is best to use counter-clockwise paths for exterior paths if you are drawing with usual cubic Bézier curves. Font build tools tend to reverse paths when building TTFs, as these should have clockwise outer paths.</p>
+    <p><i>How to interpret results of the following tests:</i></p>
+    <p>If the “Variable” samples look the same as the “Static” samples, the variable font is working as desired.</p>
     <div class="test">
         <h2>Original Problem</h2>
         <div class="comparison">
@@ -150,14 +152,15 @@
     <div class="test">
         <h2>Solution: Matching direction in dot and base</h2>
         <p>Turns out, if you match the path direction in the sources, it works while using components!</p>
+        <p>The following glyphs are drawn with CCW paths in their sources.</p>
         <div class="comparison">
             <div>
                 <h4>Variable Font</h4>
-                <span class="test-text variable thin">i j ! ; ï</span>
+                <span class="test-text variable-CCW thin">i j ! ; ï</span>
             </div>
             <div>
                 <h4>Static Font</h4>
-                <span class="test-text static thin">i j ! ; ï</span>
+                <span class="test-text static-CCW thin">i j ! ; ï</span>
             </div>
         </div>
     </div>
@@ -176,16 +179,16 @@
         </div>
     </div>
     <div class="test">
-        <h2>Test: Counter-Clockwise Path Direction</h2>
-        <p>These sources started with all contours with CCW path direction. It makes no difference, so long as the mark and base follow the same starting direction.</p>
+        <h2>Test: Clockwise Path Direction in Sources</h2>
+        <p>These sources started with all contours with CW path direction, which isn’t recommended. However, it seems to make no difference to these tests, so long as the mark and base follow the same starting direction.</p>
         <div class="comparison">
             <div>
                 <h4>Variable Font</h4>
-                <span class="test-text variable-CCW thin">i j ! ; ï</span>
+                <span class="test-text variable-CW thin">i j ! ; ï</span>
             </div>
             <div>
                 <h4>Static Font</h4>
-                <span class="test-text static-CCW thin">i j ! ; ï</span>
+                <span class="test-text static-CW thin">i j ! ; ï</span>
             </div>
         </div>
     </div>
